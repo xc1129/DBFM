@@ -13,7 +13,7 @@
 		8028BD2E1BA3F9860053342F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8028BD2D1BA3F9860053342F /* Images.xcassets */; };
 		8028BD311BA3F9860053342F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8028BD2F1BA3F9860053342F /* LaunchScreen.xib */; };
 		8028BD3D1BA3F9860053342F /* DBFMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BD3C1BA3F9860053342F /* DBFMTests.swift */; };
-		8028BD471BA41A3C0053342F /* EkoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BD461BA41A3C0053342F /* EkoImage.swift */; };
+		809B5E0C1BA42B1B001452EE /* EkoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 809B5E0B1BA42B1B001452EE /* EkoImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +37,7 @@
 		8028BD361BA3F9860053342F /* DBFMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBFMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8028BD3B1BA3F9860053342F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8028BD3C1BA3F9860053342F /* DBFMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBFMTests.swift; sourceTree = "<group>"; };
-		8028BD461BA41A3C0053342F /* EkoImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EkoImage.swift; sourceTree = "<group>"; };
+		809B5E0B1BA42B1B001452EE /* EkoImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EkoImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +85,7 @@
 				8028BD2D1BA3F9860053342F /* Images.xcassets */,
 				8028BD2F1BA3F9860053342F /* LaunchScreen.xib */,
 				8028BD241BA3F9860053342F /* Supporting Files */,
-				8028BD461BA41A3C0053342F /* EkoImage.swift */,
+				809B5E0B1BA42B1B001452EE /* EkoImage.swift */,
 			);
 			path = DBFM;
 			sourceTree = "<group>";
@@ -215,7 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8028BD471BA41A3C0053342F /* EkoImage.swift in Sources */,
+				809B5E0C1BA42B1B001452EE /* EkoImage.swift in Sources */,
 				8028BD291BA3F9860053342F /* ViewController.swift in Sources */,
 				8028BD271BA3F9860053342F /* AppDelegate.swift in Sources */,
 			);
@@ -413,6 +413,7 @@
 				8028BD421BA3F9860053342F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8028BD431BA3F9860053342F /* Build configuration list for PBXNativeTarget "DBFMTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +422,7 @@
 				8028BD451BA3F9860053342F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -20,14 +20,14 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="igt-vu-mK3">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Udw-nk-IcN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="Udw-nk-IcN" customClass="EkoImage" customModule="DBFM" customModuleProvider="target">
                                 <rect key="frame" x="60" y="30" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1Gd-pX-tWE"/>
                                     <constraint firstAttribute="width" constant="200" id="bQG-0H-htF"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ot-Qn-f2e">
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cover" translatesAutoresizingMaskIntoConstraints="NO" id="5ot-Qn-f2e" customClass="EkoImage" customModule="DBFM" customModuleProvider="target">
                                 <rect key="frame" x="125" y="95" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="420-el-qX9"/>
@@ -138,6 +138,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="igt-vu-mK3" secondAttribute="trailing" constant="-16" id="1nX-A6-uSR"/>
                             <constraint firstItem="LjN-At-Bwf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="3Os-Df-aZZ"/>
                             <constraint firstAttribute="centerX" secondItem="XNI-rk-BfY" secondAttribute="centerX" constant="138.5" id="8YE-oQ-AKr"/>
+                            <constraint firstItem="LjN-At-Bwf" firstAttribute="centerX" secondItem="Udw-nk-IcN" secondAttribute="centerX" constant="1" id="8hI-vz-x2o"/>
                             <constraint firstItem="Z45-Ri-RbX" firstAttribute="leading" secondItem="5ot-Qn-f2e" secondAttribute="leading" id="9bN-qP-U0x"/>
                             <constraint firstItem="LjN-At-Bwf" firstAttribute="centerY" secondItem="XNI-rk-BfY" secondAttribute="centerY" constant="-0.5" id="A6I-WP-Q39"/>
                             <constraint firstItem="LjN-At-Bwf" firstAttribute="centerY" secondItem="XNI-rk-BfY" secondAttribute="centerY" constant="-0.5" id="DVt-GB-MC1"/>
@@ -171,8 +172,17 @@
                             <constraint firstAttribute="centerX" secondItem="Udw-nk-IcN" secondAttribute="centerX" id="zB6-cS-hAJ"/>
                             <constraint firstAttribute="centerY" secondItem="Udw-nk-IcN" secondAttribute="centerY" constant="154" id="zgW-fi-69B"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="zgW-fi-69B"/>
+                                <exclude reference="8hI-vz-x2o"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="iv" destination="Udw-nk-IcN" id="c5p-Jq-13i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -219,4 +229,7 @@
             <point key="canvasLocation" x="788" y="372"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cover" width="220" height="220"/>
+    </resources>
 </document>
